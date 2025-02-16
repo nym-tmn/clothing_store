@@ -43,6 +43,9 @@
 
 .work-scheme__item {
 	max-width: 160px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .work-scheme__item-label-container {
@@ -51,7 +54,6 @@
 	height: 114px;
 	border-radius: 50%;
 	display: flex;
-	justify-self: center;
 	justify-content: center;
 	align-items: center;
 	margin: 0px 0px 42px 0px;
@@ -75,8 +77,6 @@
 
 	.aside-container {
 		grid-template-rows: 300px;
-		/* margin: 0px 30px; */
-		/* top: -135px; */
 	}
 }
 
