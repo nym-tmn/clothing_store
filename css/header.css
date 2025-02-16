@@ -141,10 +141,11 @@
 	}
 
 	.header__button-send-request {
-		display: flex;
-		/* justify-content: center; */
-		/* align-items: center; */
+		/* display: flex;
+		justify-content: center;
+		align-items: center; */
 		margin: 0px auto 137px auto;
+		display: grid;
 	}
 }
 
