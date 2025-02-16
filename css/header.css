@@ -76,7 +76,6 @@
 
 .header__button-send-request {
 	grid-area: button-send-request;
-	/* justify-self: center; */
 	margin: 0 auto;
 }
 
