@@ -1,0 +1,122 @@
+.section-video {
+	display: flex;
+	justify-content: center;
+	margin: 0px 40px;
+}
+
+.video {
+	border-radius: 15px;
+	max-width: 100%;
+	height: 350px;
+	object-fit: cover;
+	margin: -175px 0px 130px 0px;
+}
+
+.services__title {
+	padding: 0px 0px 53px 0px;
+}
+
+.services__text {
+	max-width: 738px;
+	padding: 0px 0px 80px 0px;
+}
+
+.services__items {
+	padding: 0px 0px 131px 0px;
+	column-gap: 36px;
+	row-gap: 58px;
+	margin: 0px 40px;
+	justify-content: center;
+}
+
+.title_small {
+	font-family: 'RF Dewi Expanded Ultrabold';
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #191919;
+	margin: 0 auto;
+}
+
+.services__item {
+	max-width: 351px;
+}
+
+.services__item-photo {
+	padding: 0px 0px 34px 0px;
+	max-width: 100%;
+	max-height: auto;
+}
+
+.services__item-title {
+	padding: 0px 0px 25px 0px;
+}
+
+@media (max-width: 930px) {
+	.video {
+		margin-bottom: 100px;
+	}
+
+	.services__items {
+		padding: 0px 0px 71px 0px;
+	}
+}
+
+@media (max-width: 760px) {
+	.services__title {
+		line-height: 42px;
+	}
+
+	.services__text {
+		padding: 0px 30px 53px 30px;
+	}
+
+	.section-video {
+		margin-left: 35px;
+		margin-right: 35px;
+	}
+
+	.video {
+		margin-bottom: 85px;
+	}
+}
+
+@media (max-width: 600px) {
+	.services__title {
+		font-size: clamp(20px, 5.1vw, 30px);
+		line-height: 38.5px;
+	}
+
+	.section-video {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.video {
+		margin-bottom: 72px;
+
+	}
+
+	.services__items {
+		margin: 0px 30px;
+	}
+
+	.services__item {
+		flex: 1 1 100%;
+	}
+}
+
+@media (max-width: 430px) {
+	.services__title {
+		line-height: 27px;
+	}
+
+	.section-video {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.video {
+		margin-bottom: 50px;
+	}
+}

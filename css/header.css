@@ -1,0 +1,211 @@
+.header {
+	height: 677px;
+	background-image: linear-gradient(rgba(36, 16, 13, 0.3), rgba(36, 16, 13, 0.3)), url(../img/header_banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	display: grid;
+	grid-template-areas: 'header__phone-number header__company-name header__email'
+		'header__slogan header__slogan header__slogan'
+		'button-send-request button-send-request button-send-request';
+	grid-template-columns: 1fr minmax(auto, 766px) 1fr;
+	grid-template-rows: repeat(3, min-content);
+	padding: 30px 0px 0px 0px;
+}
+
+.company-name_visible_hidden {
+	display: none;
+}
+
+.header__phone-number {
+	grid-area: header__phone-number;
+	justify-self: end;
+}
+
+.header__company-name {
+	grid-area: header__company-name;
+	justify-self: center;
+}
+
+.header__email {
+	grid-area: header__email;
+}
+
+.phone-number__container {
+	width: 217px;
+}
+
+.phone-number__phone-link,
+.email__email-link {
+	font-family: 'RF Dewi Expanded Ultrabold';
+	line-height: 16.8px;
+}
+
+.phone-number__text,
+.email__text {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.company-name__title {
+	font-family: 'RF Dewi Expanded Ultrabold';
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.company-name__subtitle {
+	font-family: 'RF Dewi Expanded Regular';
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.header__slogan {
+	grid-area: header__slogan;
+	justify-self: center;
+	font-family: 'RF Dewi Expanded Ultrabold';
+	font-size: clamp(35px, 5.834vw, 60px);
+	line-height: 72px;
+	margin: 133px 0px 42px 0px;
+	text-align: center;
+}
+
+.header__button-send-request {
+	grid-area: button-send-request;
+	justify-self: center;
+}
+
+.button-send-request {
+	font-family: 'RF Dewi Expanded Ultrabold';
+	font-size: 16px;
+	line-height: 19.2px;
+	background-color: #F4DF74;
+	border-radius: 10px;
+	width: 265px;
+	height: 64px;
+	color: #353535;
+}
+
+.contacts_visible_hidden {
+	display: none;
+}
+
+@media (max-width: 1280px) {
+	.header__phone-number {
+		padding: 0px 0px 0px 38.5px;
+	}
+
+	.header__email {
+		padding: 0px 38.5px 0px 0px;
+	}
+}
+
+@media (max-width: 800px) {
+
+	.header {
+		display: block;
+	}
+
+	.header__phone-number,
+	.header__company-name,
+	.header__email {
+		display: none;
+	}
+
+	.company-name_visible_hidden {
+		display: block;
+		text-align: center;
+	}
+
+	.contacts_visible_hidden {
+		display: flex;
+	}
+
+	.contacts__phone-number_visible_hidden,
+	.contacts__email_visible_hidden {
+		flex: 1 calc(100vw / 2);
+	}
+
+	.contacts__phone-number_visible_hidden {
+		padding: 0px 0px 0px 46px;
+	}
+
+	.contacts__email_visible_hidden {
+		padding: 0px 46px 0px 0px;
+		justify-items: end;
+	}
+
+	.header__button-send-request {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px 137px 0px;
+	}
+}
+
+@media (max-width: 600px) {
+	.header {
+		padding: 21px 0px 0px 0px;
+	}
+
+	.header__button-send-request {
+		margin: 0px 0px 157px 0px;
+	}
+
+	.button-send-request {
+		font-size: 14px;
+		line-height: 16.8px;
+		width: 221px;
+		height: 54px;
+	}
+
+	.contacts__phone-number_visible_hidden {
+		padding: 0px 0px 0px 26px;
+	}
+
+	.contacts__email_visible_hidden {
+		padding: 0px 26px 0px 0px;
+	}
+
+	.phone-number__container {
+		width: 200px;
+	}
+
+	.header__slogan {
+		font-size: clamp(25px, 6.434vw, 35px);
+	}
+}
+
+@media (max-width: 480px) {
+	.contacts_visible_hidden {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.contacts__phone-number_visible_hidden,
+	.contacts__email_visible_hidden {
+		padding: 0;
+		flex: 1 auto;
+		justify-items: normal;
+		text-align: center;
+	}
+
+	.header__button-send-request {
+		margin: 0px 0px 100px 0px;
+	}
+
+	.phone-number__container {
+		width: auto;
+	}
+
+	.button-send-request {
+		font-size: 12px;
+		line-height: 14.8px;
+		width: 190px;
+		height: 50px;
+	}
+}
