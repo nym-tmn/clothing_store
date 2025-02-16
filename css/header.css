@@ -76,6 +76,7 @@
 
 .header__button-send-request {
 	grid-area: button-send-request;
+	/* justify-self: center; */
 	margin: 0 auto;
 }
 
@@ -143,7 +144,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 0px 0px 137px 0px;
+		margin: 0px auto 137px auto;
 	}
 }
 
@@ -153,7 +154,7 @@
 	}
 
 	.header__button-send-request {
-		margin: 0px 0px 157px 0px;
+		margin: 0px auto 157px auto;
 	}
 
 	.button-send-request {
@@ -195,7 +196,7 @@
 	}
 
 	.header__button-send-request {
-		margin: 0px 0px 100px 0px;
+		margin: 0px auto 100px auto;
 	}
 
 	.phone-number__container {
