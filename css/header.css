@@ -146,6 +146,7 @@
 		align-items: center; */
 		margin: 0px auto 137px auto;
 		display: grid;
+		align-items: center;
 	}
 }
 
